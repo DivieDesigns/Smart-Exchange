@@ -215,7 +215,12 @@ span.material-symbols-outlined{
     justify-content: space-around;
     background-color: rgba(235, 235, 235, 0.322);
   }
-
+  
+  img.box-image{
+    width: 150px;
+    margin: 20px 0px;
+  }
+  
 }
 
 
