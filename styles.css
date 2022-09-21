@@ -30,7 +30,7 @@ nav{
   background-color: var(--light-purple);
   padding-bottom: 50px;
   height: 100%;
-  /* background-image: url('bg.jpg'); */
+  background-image: url('new-bg.jpg');
   background-position: right;
 }
 
@@ -171,12 +171,47 @@ span.material-symbols-outlined{
 }
 
 .ass{
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.2em;
-  color: var(--light-purple);
+  color: #333;
   text-align: center;
   padding-top: 30px;
 }
+
+img.abt-image{
+  width: 600px;
+}
+
+section.about{
+  padding: 0px 100px;
+  background-color: rgb(255, 240, 255);
+}
+
+h2.about-heading{
+  font-size: 4em;
+  margin-bottom: 30px;
+  color: blueviolet;
+}
+
+p.about-note{
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #333;
+}
+
+.abt-box{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+/* ------------THIS IS FOR MEDIA 1-------------- */
 
 @media screen and (max-width: 792px){
   .container{
@@ -215,10 +250,41 @@ span.material-symbols-outlined{
     justify-content: space-around;
     background-color: rgba(235, 235, 235, 0.322);
   }
-  
+
   img.box-image{
     width: 150px;
     margin: 20px 0px;
+  }
+
+  .abt-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background-color: rgb(255, 240, 255);
+  }
+
+  img.abt-image{
+    width: 90%;
+  }
+
+  section.about{
+    padding: 0px 10px;
+  }
+
+  h2.about-heading{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: blueviolet;
+    text-align: center;
+  }
+  
+  p.about-note{
+    font-size: 1em;
+    padding: 5px 30px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
   }
   
 }
