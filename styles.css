@@ -151,6 +151,10 @@ p.details{
   color: rgb(71, 71, 71);
 }
 
+img.box-image{
+  width: 150px;
+  margin: 20px 0px;
+}
 span.material-symbols-outlined{
   color: blueviolet;
   /* height: 50px;
