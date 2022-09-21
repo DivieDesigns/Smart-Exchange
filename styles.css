@@ -141,7 +141,7 @@ div.boxes{
 }
 
 h2.small-head{
-  color: var(--light-purple);
+  color: #333;
   font-weight: 700;
   font-size: 2em;
 }
@@ -155,6 +155,15 @@ img.box-image{
   width: 150px;
   margin: 20px 0px;
 }
+
+.programs{
+ font-size: 40px; 
+ text-align: center;
+ padding: 20px 0px;
+ background-color: rgb(255, 240, 255);
+ color: #333;
+}
+
 span.material-symbols-outlined{
   color: blueviolet;
   /* height: 50px;
@@ -187,10 +196,10 @@ span.material-symbols-outlined{
   .ass{
     font-size: 20px;
     line-height: 1.2em;
-    color: var(--light-purple);
+    /* color: var(--light-purple); */
     text-align: center;
     padding: 30px;
-    background-color: var(--dark-purple);
+    background-color: #333;
     color: white;
     margin: auto;
     border-radius: 10px;
@@ -268,5 +277,6 @@ span.material-symbols-outlined{
     box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
     width: 100%;
     margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
