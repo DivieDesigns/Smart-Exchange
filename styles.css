@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --background-color: rgb(255, 255, 255);
+  --bold-font: 400;
+  --dark-purple:rgb(65, 7, 118);
+  --light-purple: blueviolet;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  padding-bottom: 700px;
+}
+nav{
+  display: none;
+}
+
+.container{
+  padding: 0 20px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  background-color: var(--light-purple);
+  padding-bottom: 50px;
+  height: 100%;
+  /* background-image: url('bg.jpg'); */
+  background-position: right;
+}
+
+.container .row{
+  /* background-color: white; */
+  margin-top: 50px;
+}
+
+.container .row .welcome{
+  font-size: 70px;
+  line-height: 1.2em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+p.shortnote{
+  font-size: 20px;
+  margin-top: 20px;
+  /* padding-right: 50px; */
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+#loginSection{
+  padding: 30px;
+  background-color: rgb(255, 240, 255);
+  border-radius: 10px;
+  box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
+  /* margin-left: 50px; */
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+h2.back{
+  color: var(--dark-purple);
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+input{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 17px;
+  border-color: var(--light-purple);
+  margin-top: 7px;
+}
+
+
+button.sign-in, button.sign-up{
+  width: 150px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--light-purple);
+  color: white;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: rgba(128, 128, 128, 0.576) 1px 2px 10px;
+  cursor: pointer;
+}
+
+button.sign-up{
+  display: block;
+  margin-top: 25px;
+  color: var(--light-purple);
+  background-color: white;
+  border-color: var(--light-purple);
+  /* border-style: solid; */
+}
+
+a.forgot{
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: red;
+  float: right;
+}
+
+div.boxes{
+  display: flex;
+  flex-direction: row;
+  padding: 50px 100px;
+  flex-wrap: wrap;
+  /* margin-top: 50px; */
+  justify-content: space-around;
+  background-color: rgba(235, 235, 235, 0.322);
+}
+
+.boxes .box{
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(255, 240, 255);
+  box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+h2.small-head{
+  color: var(--light-purple);
+  font-weight: 700;
+  font-size: 2em;
+}
+
+p.details{
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+}
+
+span.material-symbols-outlined{
+  color: blueviolet;
+  /* height: 50px;
+  width: 50px; */
+}
+
+.ass{
+  font-size: 40px;
+  line-height: 1.2em;
+  color: var(--light-purple);
+  text-align: center;
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 792px){
+  .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+
+  #loginSection{
+    margin: auto;
+    margin-top: 30px;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .ass{
+    font-size: 20px;
+    line-height: 1.2em;
+    color: var(--light-purple);
+    text-align: center;
+    padding: 30px;
+    background-color: var(--dark-purple);
+    color: white;
+    margin: auto;
+    border-radius: 10px;
+    width: 90%;
+  }
+
+  div.boxes{
+    display: flex;
+    flex-direction: row;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    /* margin-top: 50px; */
+    justify-content: space-around;
+    background-color: rgba(235, 235, 235, 0.322);
+  }
+
+}
+
+
+
+@media screen and (max-width: 480px){
+
+  nav{
+    display: none;
+  }
+  .container{
+    padding: 30px 30px;
+    display: block;
+    height: 50%;
+  }
+  
+  #loginSection{
+    /* margin: auto; */
+    margin-top: 30px;
+    padding: 30px;
+    /* width: 80%; */
+  }
+
+  button.sign-in{
+    display: block;
+  }
+
+  .container .row .welcome{
+    font-size: 3.5rem;
+    line-height: 1.2em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  p.shortnote{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  input{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+  }
+
+  div.boxes{
+    display: block;
+    padding: 30px 30px;
+    /* margin-top: 50px; */
+  }
+  
+  .boxes .box{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 240, 255);
+    box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
