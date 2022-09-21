@@ -16,7 +16,7 @@
 body{
   font-family: 'Poppins', sans-serif;
   background-color: var(--background-color);
-  padding-bottom: 700px;
+  /* padding-bottom: 700px; */
 }
 nav{
   display: none;
@@ -27,7 +27,7 @@ nav{
   /* display: flex;
   justify-content: space-between;
   align-items: center; */
-  background-color: var(--light-purple);
+  background-color: rgba(137, 43, 226, 0.303);
   padding-bottom: 50px;
   height: 100%;
   background-image: url('new-bg.jpg');
@@ -59,7 +59,7 @@ p.shortnote{
 
 #loginSection{
   padding: 30px;
-  background-color: rgb(255, 240, 255);
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
   /* margin-left: 50px; */
@@ -126,13 +126,13 @@ div.boxes{
   flex-wrap: wrap;
   /* margin-top: 50px; */
   justify-content: space-around;
-  background-color: rgba(235, 235, 235, 0.322);
+  background-color: rgba(255, 255, 255, 0.322);
 }
 
 .boxes .box{
   padding: 10px;
   text-align: center;
-  background-color: rgb(255, 240, 255);
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
   width: 300px;
   border-radius: 10px;
@@ -160,7 +160,7 @@ img.box-image{
  font-size: 40px; 
  text-align: center;
  padding: 20px 0px;
- background-color: rgb(255, 240, 255);
+ background-color: rgb(255, 255, 255);
  color: #333;
 }
 
@@ -178,32 +178,65 @@ span.material-symbols-outlined{
   padding-top: 30px;
 }
 
-img.abt-image{
+img.abt-image, img.abt-image2{
   width: 600px;
+}
+
+img.abt-image2{
+  width: 400px;
+}
+
+div.abt-box2{
+  padding-bottom: 50px;
 }
 
 section.about{
   padding: 0px 100px;
-  background-color: rgb(255, 240, 255);
+  background-color: rgb(240, 255, 253);
 }
 
 h2.about-heading{
   font-size: 4em;
   margin-bottom: 30px;
-  color: blueviolet;
+  color: rgb(9, 158, 148);
+}
+
+h2.about-heading1{
+  text-align: right;
+}
+
+h2.about-heading2{
+  text-align: left;
 }
 
 p.about-note{
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 600;
   color: #333;
+}
+
+p.about-note1{
+  text-align: right;
+}
+
+p.about-note2{
+  padding-right: 100px;
+  text-align: left;
 }
 
 .abt-box{
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
+footer{
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 100%;
+  padding: 100px 5px;
+}
 
 
 
@@ -248,24 +281,34 @@ p.about-note{
     flex-wrap: wrap;
     /* margin-top: 50px; */
     justify-content: space-around;
-    background-color: rgba(235, 235, 235, 0.322);
+    background-color: rgba(255, 255, 255, 0.322);
   }
 
-  img.box-image{
+  /* img.box-image{
     width: 150px;
     margin: 20px 0px;
-  }
+  } */
 
   .abt-box{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 50px;
-    background-color: rgb(255, 240, 255);
+    /* margin-bottom: 50px; */
+    background-color: rgb(240, 255, 253);
+    padding-bottom: 50px;
   }
 
-  img.abt-image{
+  div.abt-box2{
+    flex-direction: column-reverse;
+    padding-bottom: 50px;
+  }
+
+  img.abt-image, img.abt-image2{
     width: 90%;
+  }
+
+  img.abt-image2{
+    width: 70%;
   }
 
   section.about{
@@ -275,7 +318,7 @@ p.about-note{
   h2.about-heading{
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: blueviolet;
+    /* color: blueviolet; */
     text-align: center;
   }
   
@@ -283,7 +326,7 @@ p.about-note{
     font-size: 1em;
     padding: 5px 30px;
     font-weight: 600;
-    color: #333;
+    /* color: #333; */
     text-align: center;
   }
   
@@ -344,7 +387,7 @@ p.about-note{
   .boxes .box{
     padding: 10px;
     text-align: center;
-    background-color: rgb(255, 240, 255);
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(13, 13, 13, 0.096) 1px 2px 20px;
     width: 100%;
     margin-bottom: 30px;
